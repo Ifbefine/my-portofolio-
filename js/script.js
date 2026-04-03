@@ -58,7 +58,7 @@ const langData = {
 const langBtn = document.getElementById('lang-btn');
 let currentLang = 'en';
 
-// === Основная функция смены языка ===
+
 function switchLanguage(lang) {
     currentLang = lang;
     
@@ -69,16 +69,16 @@ function switchLanguage(lang) {
         }
     });
 
-    // Обновляем текст кнопки
+    
     langBtn.textContent = currentLang === 'en' ? 'RU' : 'ENG';
 }
 
-// Применяем язык сразу при загрузке страницы
+
 document.addEventListener('DOMContentLoaded', () => {
     switchLanguage(currentLang);
 });
 
-// Смена языка по кнопке
+
 langBtn.addEventListener('click', () => {
     const newLang = currentLang === 'ru' ? 'en' : 'ru';
     switchLanguage(newLang);
