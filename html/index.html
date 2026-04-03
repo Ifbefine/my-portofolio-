@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Вова</title>
+    <link rel="stylesheet" href="/css/style.css?v=2.1">
+</head>
+<body>
+
+    <header class="navbar">
+        <nav>
+            <a href="#home" data-lang="nav-home">Главная</a>
+            <a href="#about" data-lang="nav-about">Обо мне</a>
+            <a href="#projects" data-lang="nav-projects">Проекты</a>
+            <a href="#contact" data-lang="nav-contact">Контакты</a>
+            <button id="lang-btn" class="lang-switch">EN</button>
+        </nav>
+    </header>
+
+    <section  id="home" class="hero">
+        <div class="hero-content">
+            <img src="https://media.licdn.com/dms/image/v2/D5635AQHmcTE--NgegA/profile-framedphoto-shrink_400_400/B56Z1POXO2HMAc-/0/1775150658882?e=1775757600&v=beta&t=kFWyCF2DGE-kb8Zs3SMuRS3xVeJrUHJRdTGNcE2wm0c" alt="Фото" class="avatar">
+            <h1 data-lang="hero-title">Привет, я Владимир</h1>
+            <p data-lang="hero-sub">QA Automation Engineer • Java • Playwright • Selenium</p>
+            <a href="#projects" class="btn primary" data-lang="hero-btn">Посмотреть проекты</a>
+        </div>
+    </section>
+
+    <section id="about" class="section container">
+        <h2 class="section-title" data-lang="about-title">Обо мне</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p data-lang="about-text-1"></p>
+                <p data-lang="about-text-2"></p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item"><strong>Java & Selenium</strong> - <span data-lang="skill-1"></span></div>
+                <div class="skill-item"><strong>Postman & REST</strong> - <span data-lang="skill-2"></span></div>
+                <div class="skill-item"><strong>SQL & Databases</strong> - <span data-lang="skill-3"></span></div>
+                <div class="skill-item"><strong>Git & CI/CD</strong> - <span data-lang="skill-4"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section container bg-light">
+        <h2 class="section-title" data-lang="projects-title">Мои проекты</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="https://media.licdn.com/dms/image/v2/D4E22AQG1ivL2_LaU9Q/feedshare-shrink_1280/B4EZzjY6u.HgAM-/0/1773341486369?e=1776902400&v=beta&t=lNfHBOA0oi8WDt7I5dBJF1xOK80SdWllsXKXLmgDPNA" alt="Проект 1">
+                <div class="project-info">
+                    <h3 data-lang="p1-title"></h3>
+                    <p data-lang="p1-desc"></p>
+                    <a href="https://github.com/vkadi-budetak/blablabike" class="project-link" data-lang="project-view">Посмотреть на GitHub →</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://media.licdn.com/dms/image/v2/D4E22AQG1ivL2_LaU9Q/feedshare-shrink_1280/B4EZzjY6u.HgAM-/0/1773341486369?e=1776902400&v=beta&t=lNfHBOA0oi8WDt7I5dBJF1xOK80SdWllsXKXLmgDPNA" alt="Проект 2">
+                <div class="project-info">
+                    <h3 data-lang="p2-title"></h3>
+                    <p data-lang="p2-desc"></p>
+                    
+                    <div class="bug-report">
+                        <h2 id="bug-title" data-lang="bug-title"></h2>
+                        <img src="/images/photo_2026-03-23_23-37-29.jpg" alt="Bug Screenshot" class="project-image">
+                        <p id="bug-info" data-lang="bug-info"></p>
+                    </div>
+
+                    <a href="https://github.com/Ifbefine/BlaBlaBikeTests" class="project-link" data-lang="project-view">Посмотреть на GitHub →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <h2 data-lang="footer-title"></h2>
+        <p data-lang="footer-sub"></p>
+        <div class="footer-links">
+            <a href="https://t.me/Ifbefine">Telegram</a>
+            <a href="https://github.com/Ifbefine">GitHub</a>
+        </div>
+        <p class="copy">&copy; 2026. <span data-lang="copy"></span></p>
+    </footer>
+
+    <script src="/js/script.js?v=2.1"></script>
+</body>
+</html>
