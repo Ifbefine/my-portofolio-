@@ -16,7 +16,7 @@ const langData = {
         'skill-4': 'CI/CD и Git (GitHub Actions)',
         'projects-title': 'Мои проекты',
         'p1-title': 'Blablabike — Онлайн-магазин велосипедов',
-        'p1-desc': 'Командный проект с разработчиками и тестировщиками. Участвовал в создании полноценного веб-приложения от идеи до готового продукта.',
+        'p1-desc': 'Командный проект с разработчиками и тестировщиками. Участвовал в создании полноценного веб-приложения от идеи до готового продукта. <br><a href="https://blablabike.vercel.app/" target="_blank" style="color: var(--primary); font-weight: bold;">Посмотреть live-демо →</a>',
         'p2-title': 'Blablabike Testing Framework',
         'p2-desc': 'Разработал полноценный фреймворк E2E-автоматизации на Java с использованием Page Object Model.',
         'bug-title': ' < Интересный найденный баг >',
@@ -43,7 +43,7 @@ const langData = {
         'skill-4': 'CI/CD & Git (GitHub Actions)',
         'projects-title': 'My Projects',
         'p1-title': 'Blablabike — Bicycle Online Store',
-        'p1-desc': 'Team project involving developers and QA engineers. Participated in building a full-featured web application.',
+        'p1-desc': 'Team project involving developers and QA engineers. Participated in building a full-featured web application. <br><a href="https://blablabike.vercel.app/" target="_blank" style="color: var(--primary); font-weight: bold;">Click on BlaBlaBike →</a>',
         'p2-title': 'Blablabike Testing Framework',
         'p2-desc': 'Built a complete E2E automation framework using Java (Page Object Model). Covered critical user flows.',
         'bug-title': '< Interesting bug found >',
@@ -62,12 +62,13 @@ let currentLang = 'en';
 function switchLanguage(lang) {
     currentLang = lang;
     
-    document.querySelectorAll('[data-lang]').forEach(element => {
-        const key = element.getAttribute('data-lang');
-        if (langData[lang][key] && langData[lang][key]) {
-            element.textContent = langData[lang][key];
-        }
-    });
+   
+document.querySelectorAll('[data-lang]').forEach(element => {
+    const key = element.getAttribute('data-lang');
+    if (langData[currentLang][key]) {
+        element.innerHTML = langData[currentLang][key]; // Было textContent, стало innerHTML
+    }
+});
 
     
     langBtn.textContent = currentLang === 'en' ? 'RU' : 'ENG';
